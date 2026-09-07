@@ -1,0 +1,25 @@
+.DS_Store
+
+# --- civix_pipeline (Python) ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Drafted, approved and published briefs are generated output, and drafts
+# can contain unreviewed model text — they don't belong in version control.
+civix_pipeline/data/drafts/
+civix_pipeline/data/approved/
+civix_pipeline/data/published/
+
+# --- civix_app (Flutter) ---
+# civix_app/.gitignore covers the Dart/Flutter artifacts; these are the
+# Gradle ones the Flutter template leaves out.
+civix_app/android/.gradle/
+civix_app/android/local.properties
+civix_app/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java
+
+# Local emulator/run scratch
+*.log

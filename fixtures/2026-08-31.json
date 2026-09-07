@@ -1,0 +1,207 @@
+{
+  "brief_id": "2026-08-31",
+  "published_at": "2026-08-31T10:00:00Z",
+  "schema_version": 1,
+  "stories": [
+    {
+      "id": "farm-subsidy-reauthorization",
+      "headline": "House passes farm bill reauthorization with changes to food assistance",
+      "topics": ["economy", "housing"],
+      "what_happened": {
+        "text": "The House passed a reauthorization of the farm bill, which sets agriculture policy and food assistance program rules for the next five years, and sent it to the Senate.",
+        "citations": [
+          { "label": "Congress.gov, Roll Call Vote", "url": "https://www.congress.gov/" }
+        ]
+      },
+      "why_it_matters": {
+        "text": "This bill covers SNAP, the food assistance program many families use — changes to its eligibility rules could affect households you know, even if you don't use it yourself.",
+        "citations": [
+          { "label": "Congress.gov, Roll Call Vote", "url": "https://www.congress.gov/" }
+        ]
+      },
+      "argument": {
+        "side_a": {
+          "label": "Supporters argue",
+          "text": "Supporters argue the bill's updated work-reporting requirements target able-bodied adults without dependents specifically, and that the added funding for job training helps recipients move toward stable employment rather than long-term reliance on assistance.",
+          "word_count": 41
+        },
+        "side_b": {
+          "label": "Opponents argue",
+          "text": "Opponents argue the new reporting requirements will cause eligible families to lose benefits over paperwork errors rather than fraud, pointing to past rollouts of similar requirements where enrollment dropped due to administrative burden, not ineligibility.",
+          "word_count": 40
+        }
+      },
+      "check": {
+        "question": "What has happened to the bill so far?",
+        "options": [
+          "It has been signed into law",
+          "It passed the House and now goes to the Senate",
+          "It failed in the House",
+          "It was vetoed"
+        ],
+        "answer_index": 1,
+        "explanation": "Passing the House is one step in a multi-step process — it still needs Senate passage and a presidential signature to become law."
+      }
+    },
+    {
+      "id": "transit-fare-pilot",
+      "headline": "City council approves free transit pilot for high schoolers",
+      "topics": ["economy", "education"],
+      "what_happened": {
+        "text": "A city council voted to fund a one-year pilot program giving free public transit passes to all public high school students, starting with the upcoming school year.",
+        "citations": [
+          { "label": "City Council Meeting Minutes", "url": "https://example-city.gov/council/minutes" }
+        ]
+      },
+      "why_it_matters": {
+        "text": "If you're a high schooler in this city, this directly changes whether you pay to take the bus or train to school, practice, or a job.",
+        "citations": [
+          { "label": "City Council Meeting Minutes", "url": "https://example-city.gov/council/minutes" }
+        ]
+      },
+      "argument": {
+        "side_a": {
+          "label": "Supporters argue",
+          "text": "Supporters argue free transit removes a real cost barrier to attendance and after-school activities for lower-income students, and that a one-year pilot is a low-risk way to measure the effect on attendance before committing longer term.",
+          "word_count": 42
+        },
+        "side_b": {
+          "label": "Opponents argue",
+          "text": "Opponents argue the pilot's cost draws from the same transit budget that funds route frequency and maintenance, and that the money might do more for ridership overall if spent on service improvements instead of a fare exemption.",
+          "word_count": 40
+        }
+      },
+      "check": {
+        "question": "How long is this program funded for right now?",
+        "options": [
+          "Permanently",
+          "One year, as a pilot",
+          "Five years",
+          "It hasn't been funded yet"
+        ],
+        "answer_index": 1,
+        "explanation": "It's explicitly a one-year pilot — the council will need a separate vote to continue it."
+      }
+    },
+    {
+      "id": "data-privacy-minors-rule",
+      "headline": "Federal Trade Commission finalizes rule on data collection from minors",
+      "topics": ["technology", "civil-rights"],
+      "what_happened": {
+        "text": "The Federal Trade Commission finalized an update to rules governing what personal data apps and websites can collect from users under 18 without stronger consent and deletion options.",
+        "citations": [
+          { "label": "Federal Register, Final Rule", "url": "https://www.federalregister.gov/" }
+        ]
+      },
+      "why_it_matters": {
+        "text": "This affects what data the apps you use every day are allowed to collect and keep about you if you're under 18, and gives you new rights to have that data deleted.",
+        "citations": [
+          { "label": "Federal Register, Final Rule", "url": "https://www.federalregister.gov/" }
+        ]
+      },
+      "argument": {
+        "side_a": {
+          "label": "Supporters argue",
+          "text": "Supporters argue minors can't meaningfully consent to the fine print in data collection agreements, so stronger default protections and an easy deletion process are necessary regardless of what a checkbox says a user agreed to.",
+          "word_count": 40
+        },
+        "side_b": {
+          "label": "Opponents argue",
+          "text": "Opponents argue the rule's age-verification requirements could push platforms toward collecting more identifying information, not less, in order to confirm a user's age in the first place, undercutting the rule's own privacy goal.",
+          "word_count": 40
+        }
+      },
+      "check": {
+        "question": "What new right does this rule create for users under 18?",
+        "options": [
+          "The right to vote in FTC proceedings",
+          "Stronger consent and deletion options for their data",
+          "Free access to all apps",
+          "A ban on all advertising to minors"
+        ],
+        "answer_index": 1,
+        "explanation": "The rule centers on consent and deletion rights, not a ban on data collection or advertising outright."
+      }
+    },
+    {
+      "id": "court-strikes-down-mapping-law",
+      "headline": "Federal court strikes down state's new voting district map",
+      "topics": ["elections", "justice"],
+      "what_happened": {
+        "text": "A federal district court struck down a state's newly drawn legislative district map, ruling it likely violated redistricting criteria in the state constitution, and ordered the legislature to redraw it before the next election cycle.",
+        "citations": [
+          { "label": "U.S. District Court Opinion", "url": "https://example-court.gov/opinions" }
+        ]
+      },
+      "why_it_matters": {
+        "text": "District maps determine which candidates you can vote for based on where you live — a redraw could change which district you're in and who represents you.",
+        "citations": [
+          { "label": "U.S. District Court Opinion", "url": "https://example-court.gov/opinions" }
+        ]
+      },
+      "argument": {
+        "side_a": {
+          "label": "Supporters argue",
+          "text": "Supporters of the ruling argue the original map diluted certain communities' voting power by splitting them across multiple districts, and that the court was right to enforce the state constitution's specific redistricting criteria.",
+          "word_count": 38
+        },
+        "side_b": {
+          "label": "Opponents argue",
+          "text": "Opponents argue courts should defer to the legislature's map-drawing authority absent a clearer violation, and warn that a court-ordered redraw this close to the next election could create confusion about which district voters belong to.",
+          "word_count": 39
+        }
+      },
+      "check": {
+        "question": "What did the court order the legislature to do?",
+        "options": [
+          "Cancel the next election",
+          "Redraw the district map before the next election cycle",
+          "Increase the number of districts",
+          "Nothing — the ruling was symbolic"
+        ],
+        "answer_index": 1,
+        "explanation": "The court's order requires an actual redraw before the next election — it's a binding remedy, not a symbolic finding."
+      }
+    },
+    {
+      "id": "apprenticeship-funding-expansion",
+      "headline": "Senate committee advances bill expanding federal apprenticeship funding",
+      "topics": ["economy", "labor", "education"],
+      "what_happened": {
+        "text": "A Senate committee advanced a bill that would expand federal funding for registered apprenticeship programs, including new grants for programs that accept applicants as young as 16.",
+        "citations": [
+          { "label": "Congress.gov, Bill Status", "url": "https://www.congress.gov/" }
+        ]
+      },
+      "why_it_matters": {
+        "text": "If you're considering a trade or technical career instead of a four-year degree, this bill would fund more paid apprenticeship slots, including some you could start in high school.",
+        "citations": [
+          { "label": "Congress.gov, Bill Status", "url": "https://www.congress.gov/" }
+        ]
+      },
+      "argument": {
+        "side_a": {
+          "label": "Supporters argue",
+          "text": "Supporters argue expanding paid apprenticeships gives students a debt-free path into skilled trades at a time of rising four-year tuition, and that starting eligibility at 16 lets students begin building skills before graduation.",
+          "word_count": 39
+        },
+        "side_b": {
+          "label": "Opponents argue",
+          "text": "Opponents argue the bill doesn't include enough oversight funding to ensure apprenticeship programs meet safety and training standards, especially for the youngest participants, and want stronger accountability measures added before expanding eligibility.",
+          "word_count": 38
+        }
+      },
+      "check": {
+        "question": "What is the youngest age this bill would allow for new apprenticeship grants?",
+        "options": [
+          "14",
+          "16",
+          "18",
+          "21"
+        ],
+        "answer_index": 1,
+        "explanation": "The bill's new grants specifically cover programs accepting applicants starting at age 16."
+      }
+    }
+  ]
+}

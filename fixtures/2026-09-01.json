@@ -1,0 +1,207 @@
+{
+  "brief_id": "2026-09-01",
+  "published_at": "2026-09-01T10:00:00Z",
+  "schema_version": 1,
+  "stories": [
+    {
+      "id": "student-loan-servicing-rule",
+      "headline": "New rule changes how student loan payments are calculated",
+      "topics": ["education", "economy"],
+      "what_happened": {
+        "text": "The Department of Education finalized a rule changing how monthly student loan payments are calculated for borrowers on income-based repayment plans, effective for loans disbursed after January 2027.",
+        "citations": [
+          { "label": "Federal Register, Final Rule", "url": "https://www.federalregister.gov/" }
+        ]
+      },
+      "why_it_matters": {
+        "text": "If you take out federal loans for college after this date, your monthly payment will be calculated differently than for borrowers today — which changes how much of your income goes to loan payments each month after you graduate.",
+        "citations": [
+          { "label": "Federal Register, Final Rule", "url": "https://www.federalregister.gov/" }
+        ]
+      },
+      "argument": {
+        "side_a": {
+          "label": "Supporters argue",
+          "text": "Supporters argue the new formula ties payments more closely to actual take-home pay, so borrowers in lower-paying first jobs won't be stretched as thin in their early working years. They point to the previous formula using gross income, which they say didn't reflect what borrowers actually have available to spend after taxes.",
+          "word_count": 52
+        },
+        "side_b": {
+          "label": "Opponents argue",
+          "text": "Opponents argue the new formula extends the average repayment timeline, meaning borrowers pay interest over more years even if individual payments feel smaller. They point to modeling showing total interest paid over the life of a loan would rise for a typical borrower under the new calculation.",
+          "word_count": 49
+        }
+      },
+      "check": {
+        "question": "Who is affected by this new rule?",
+        "options": [
+          "Everyone with existing federal student loans, starting immediately",
+          "Only borrowers who take out federal loans disbursed after January 2027",
+          "Only private student loan borrowers",
+          "Only borrowers who have already defaulted"
+        ],
+        "answer_index": 1,
+        "explanation": "The rule applies to loans disbursed after January 2027 — it doesn't change payments on loans people already hold."
+      }
+    },
+    {
+      "id": "state-phone-policy-vote",
+      "headline": "State legislature passes bell-to-bell phone restriction for schools",
+      "topics": ["education"],
+      "what_happened": {
+        "text": "A state legislature passed a bill requiring public schools to restrict student phone use from the first bell to the last bell, starting with the 2027–2028 school year. The bill passed both chambers and awaits the governor's signature.",
+        "citations": [
+          { "label": "State legislature roll-call record", "url": "https://example-legislature.gov/bill/status" }
+        ]
+      },
+      "why_it_matters": {
+        "text": "If you're a student in this state, this changes whether you can have your phone out during class, passing periods, and lunch — not just during instruction time.",
+        "citations": [
+          { "label": "State legislature roll-call record", "url": "https://example-legislature.gov/bill/status" }
+        ]
+      },
+      "argument": {
+        "side_a": {
+          "label": "Supporters argue",
+          "text": "Supporters argue bell-to-bell policies reduce classroom distraction more than instruction-only restrictions, since students can still be pulled into notifications between classes. They cite pilot districts that reported fewer disciplinary incidents tied to phone use after adopting similar policies.",
+          "word_count": 44
+        },
+        "side_b": {
+          "label": "Opponents argue",
+          "text": "Opponents argue an all-day restriction removes a safety tool parents rely on to reach their kids during emergencies and limits students managing outside responsibilities like jobs or family care during free periods. They favor instruction-only restrictions instead.",
+          "word_count": 38
+        }
+      },
+      "check": {
+        "question": "What does 'bell-to-bell' mean in this bill?",
+        "options": [
+          "Phones restricted only during class instruction",
+          "Phones restricted from the first bell of the day to the last, including passing periods and lunch",
+          "Phones banned only on school buses",
+          "Phones restricted only for students under 16"
+        ],
+        "answer_index": 1,
+        "explanation": "Bell-to-bell covers the entire school day, not just class time — that's the detail that distinguishes it from narrower policies."
+      }
+    },
+    {
+      "id": "minimum-wage-ballot-measure",
+      "headline": "Ballot measure to raise state minimum wage qualifies for November election",
+      "topics": ["economy", "labor"],
+      "what_happened": {
+        "text": "A ballot initiative to raise the state minimum wage in stages over four years qualified for the November ballot after signature verification, meaning voters — not the legislature — will decide the outcome directly.",
+        "citations": [
+          { "label": "Secretary of State, Ballot Measure Certification", "url": "https://example-sos.gov/ballot-measures" }
+        ]
+      },
+      "why_it_matters": {
+        "text": "If you have or are about to get a part-time or entry-level job in this state, this measure would directly change the minimum you can legally be paid, phased in year by year.",
+        "citations": [
+          { "label": "Secretary of State, Ballot Measure Certification", "url": "https://example-sos.gov/ballot-measures" }
+        ]
+      },
+      "argument": {
+        "side_a": {
+          "label": "Supporters argue",
+          "text": "Supporters argue the current minimum wage hasn't kept pace with the state's cost of living, particularly rent, and that a phased increase gives businesses time to adjust budgets rather than absorbing the change all at once.",
+          "word_count": 40
+        },
+        "side_b": {
+          "label": "Opponents argue",
+          "text": "Opponents argue that raising the wage floor could lead some small businesses to cut entry-level hours or slow hiring, making it harder for first-time job seekers, including teens, to get hired in the first place.",
+          "word_count": 39
+        }
+      },
+      "check": {
+        "question": "Who decides the outcome of this measure?",
+        "options": [
+          "The state legislature",
+          "The governor alone",
+          "Voters, directly, in the November election",
+          "A federal court"
+        ],
+        "answer_index": 2,
+        "explanation": "Because it qualified as a ballot initiative, this goes straight to voters rather than through the legislature."
+      }
+    },
+    {
+      "id": "ai-content-labeling-bill",
+      "headline": "Congress advances bill requiring labels on AI-generated political ads",
+      "topics": ["technology", "elections"],
+      "what_happened": {
+        "text": "A bill requiring political advertisements to disclose when video or audio content was generated or substantially altered by AI passed out of committee and now heads to a floor vote.",
+        "citations": [
+          { "label": "Congress.gov, Bill Status", "url": "https://www.congress.gov/" }
+        ]
+      },
+      "why_it_matters": {
+        "text": "This is about the political ads and videos that show up in your feed — if it becomes law, AI-generated or altered political content would have to say so on screen.",
+        "citations": [
+          { "label": "Congress.gov, Bill Status", "url": "https://www.congress.gov/" }
+        ]
+      },
+      "argument": {
+        "side_a": {
+          "label": "Supporters argue",
+          "text": "Supporters argue voters deserve to know when the video or audio of a candidate they're seeing was generated or altered by AI, and that a disclosure requirement is a minimal, speech-preserving way to prevent deception.",
+          "word_count": 39
+        },
+        "side_b": {
+          "label": "Opponents argue",
+          "text": "Opponents argue the bill's definition of 'substantially altered' is vague enough to sweep in routine video editing, and worry it could be enforced unevenly or chill legitimate satire and commentary that uses AI tools.",
+          "word_count": 38
+        }
+      },
+      "check": {
+        "question": "What would this bill require, if passed?",
+        "options": [
+          "A ban on all AI-generated political content",
+          "A disclosure label on AI-generated or substantially altered political ads",
+          "AI companies to remove political ads from their platforms",
+          "A tax on AI advertising tools"
+        ],
+        "answer_index": 1,
+        "explanation": "The bill is a disclosure requirement, not a ban — that distinction is the core of the debate around it."
+      }
+    },
+    {
+      "id": "supreme-court-cert-grant",
+      "headline": "Supreme Court agrees to hear case on school social media liability",
+      "topics": ["justice", "technology", "education"],
+      "what_happened": {
+        "text": "The Supreme Court granted certiorari in a case asking whether school districts can be held liable for failing to address cyberbullying that occurs on social media but affects students at school. The Court will hear arguments in its next term.",
+        "citations": [
+          { "label": "Supreme Court Order List", "url": "https://www.supremecourt.gov/orders/" }
+        ]
+      },
+      "why_it_matters": {
+        "text": "The ruling could change what responsibility your school has when bullying happens on apps like Instagram or Snapchat but spills into your school day.",
+        "citations": [
+          { "label": "Supreme Court Order List", "url": "https://www.supremecourt.gov/orders/" }
+        ]
+      },
+      "argument": {
+        "side_a": {
+          "label": "Supporters argue",
+          "text": "Supporters of school liability argue districts already regulate off-campus speech that disrupts school, like threats, so they should also bear responsibility for known, unaddressed cyberbullying that affects a student's ability to learn.",
+          "word_count": 38
+        },
+        "side_b": {
+          "label": "Opponents argue",
+          "text": "Opponents argue holding schools liable for conduct on platforms they don't control sets an unworkable precedent, and that responsibility should sit with platforms and parents, not with school districts monitoring students' online lives.",
+          "word_count": 37
+        }
+      },
+      "check": {
+        "question": "What has the Supreme Court actually done so far?",
+        "options": [
+          "Ruled that schools are liable for cyberbullying",
+          "Ruled that schools are not liable for cyberbullying",
+          "Agreed to hear the case; no ruling has been made yet",
+          "Declined to hear the case"
+        ],
+        "answer_index": 2,
+        "explanation": "A cert grant means the Court will hear the case — it says nothing yet about which way they'll rule."
+      }
+    }
+  ]
+}

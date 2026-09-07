@@ -1,0 +1,13 @@
+anthropic>=0.75
+jsonschema>=4.23
+pydantic>=2.9
+httpx>=0.28
+fastapi>=0.115
+uvicorn[standard]>=0.32
+python-multipart>=0.0.12
+textstat>=0.7
+pytest>=8.3
+
+# only needed by civix/publish.py's publish_to_cdn() — R2/S3 are
+# S3-compatible, so boto3 covers both
+boto3>=1.35
