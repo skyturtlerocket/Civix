@@ -37,6 +37,12 @@ civix_pipeline/              <- Python pipeline (drafts briefs with Claude, gate
   `https://www.courtlistener.com/help/api/rest/` before relying on it. This is the
   plan's Milestone 0 verification step — partially done, flagged where it isn't.
 
+## Setting up on a new machine
+
+See **[SETUP.md](SETUP.md)** for a from-scratch guide — Flutter, the Android
+SDK, an emulator, and the disk budget it all needs. The short version, if you
+already have Flutter and an Android SDK, is below.
+
 ## Running the app
 
 ```
