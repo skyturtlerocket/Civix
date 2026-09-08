@@ -35,17 +35,39 @@ class _ErrorState extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Center(
       child: Padding(
-        padding: const EdgeInsets.all(24),
+        padding: const EdgeInsets.all(32),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const Icon(Icons.wifi_off, size: 48),
-            const SizedBox(height: 12),
-            const Text("Couldn't load today's brief."),
-            const SizedBox(height: 12),
-            FilledButton(onPressed: onRetry, child: const Text('Try again')),
+            Container(
+              height: 72,
+              width: 72,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: theme.colorScheme.surfaceContainerHighest,
+              ),
+              child: Icon(Icons.wifi_off_rounded,
+                  size: 34, color: theme.colorScheme.onSurfaceVariant),
+            ),
+            const SizedBox(height: 20),
+            Text("Couldn't load today's brief.", style: theme.textTheme.titleMedium),
+            const SizedBox(height: 8),
+            Text(
+              'Check your connection — past briefs still work offline.',
+              textAlign: TextAlign.center,
+              style: theme.textTheme.bodyMedium?.copyWith(
+                color: theme.colorScheme.onSurfaceVariant,
+              ),
+            ),
+            const SizedBox(height: 24),
+            FilledButton.icon(
+              onPressed: onRetry,
+              icon: const Icon(Icons.refresh_rounded),
+              label: const Text('Try again'),
+            ),
           ],
         ),
       ),

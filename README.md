@@ -46,6 +46,13 @@ already have Flutter and an Android SDK, is below.
 ## Running the app
 
 ```
+./run                                # from the repo root — that's it
+```
+
+Boots the emulator if needed, then runs with hot reload. Extra arguments pass
+through to `flutter run`. By hand:
+
+```
 cd civix_app
 flutter pub get
 dart run build_runner build --delete-conflicting-outputs   # regenerate *.g.dart / *.freezed.dart

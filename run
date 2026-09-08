@@ -1,0 +1,75 @@
+#!/usr/bin/env bash
+# Start Civix on the Android emulator.
+#
+#   ./run              debug build, hot reload (r = reload, q = quit)
+#   ./run --release    release build
+#   ./run -d macos     any other device; args pass straight to flutter run
+#
+# See SETUP.md if this is a fresh machine — the emulator and SDK have to
+# exist before this will work.
+set -euo pipefail
+
+REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+APP="$REPO/civix_app"
+AVD=civix
+
+# The Homebrew cask install; prefix differs on Intel. Respect an existing
+# ANDROID_HOME so a standard Android Studio SDK works too.
+if [ -z "${ANDROID_HOME:-}" ]; then
+  for candidate in /opt/homebrew/share/android-commandlinetools \
+                   /usr/local/share/android-commandlinetools \
+                   "$HOME/Library/Android/sdk"; do
+    [ -d "$candidate" ] && { export ANDROID_HOME="$candidate"; break; }
+  done
+fi
+
+die() { echo "error: $*" >&2; exit 1; }
+
+command -v flutter >/dev/null || die "flutter not on PATH — see SETUP.md"
+
+# Explicit device (e.g. -d macos) means skip all the emulator handling.
+for arg in "$@"; do
+  if [ "$arg" = "-d" ] || [ "$arg" = "--device-id" ]; then
+    cd "$APP"; exec flutter run "$@"
+  fi
+done
+
+[ -n "${ANDROID_HOME:-}" ] || die "no Android SDK found — see SETUP.md"
+ADB="$ANDROID_HOME/platform-tools/adb"
+[ -x "$ADB" ] || die "adb missing at $ADB — see SETUP.md"
+
+booted() { [ "$("$ADB" shell getprop sys.boot_completed 2>/dev/null | tr -d '\r')" = "1" ]; }
+
+if ! booted; then
+  [ -d "$HOME/.android/avd/$AVD.avd" ] || die "no '$AVD' emulator — see SETUP.md step 4"
+
+  echo "Booting the $AVD emulator..."
+  nohup "$ANDROID_HOME/emulator/emulator" -avd "$AVD" -no-boot-anim \
+    >/tmp/civix-emulator.log 2>&1 &
+
+  # Cold boot is ~30s; warm is a few seconds. Bail out early if the
+  # emulator dies rather than sitting here for the full three minutes --
+  # running out of disk is the usual cause, and it fails immediately.
+  for _ in $(seq 1 60); do
+    sleep 3
+    booted && break
+    if grep -q FATAL /tmp/civix-emulator.log 2>/dev/null; then
+      grep FATAL /tmp/civix-emulator.log >&2
+      die "emulator failed to start (full log: /tmp/civix-emulator.log)"
+    fi
+  done
+
+  booted || die "emulator did not finish booting — see /tmp/civix-emulator.log"
+fi
+
+cd "$APP"
+
+# First run after a clone has no packages and no generated sources.
+if [ ! -d .dart_tool ]; then
+  echo "First run — fetching packages and generating sources..."
+  flutter pub get
+  dart run build_runner build
+fi
+
+echo "Emulator ready. Starting Civix — r to hot reload, q to quit."
+exec flutter run "$@"

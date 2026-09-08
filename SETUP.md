@@ -80,17 +80,29 @@ sdcard.size=128 MB
 
 ## 5. Build and run
 
+From the repo root:
+
+```
+./run
+```
+
+That's the whole thing. It boots the emulator if it isn't already up, waits
+for it to finish booting (the part that's easy to get wrong by hand), fetches
+packages and runs codegen on a fresh clone, then starts the app. Press `r` to
+hot reload, `q` to quit.
+
+`./run` passes any extra arguments straight through to `flutter run`, so
+`./run --release` and `./run -d macos` both work; giving it an explicit `-d`
+skips the emulator handling entirely.
+
+To run the tests, or to do the steps by hand:
+
 ```
 cd civix_app
 flutter pub get
 dart run build_runner build          # generates *.g.dart / *.freezed.dart
 flutter test                         # 35 tests, all should pass
-./run_android.sh                     # boots the emulator if needed, then runs
 ```
-
-`run_android.sh` waits for the emulator to finish booting before starting
-Flutter, which is the part that's easy to get wrong by hand. Press `r` to hot
-reload, `q` to quit.
 
 To point a build at a real published feed instead of the bundled samples:
 
