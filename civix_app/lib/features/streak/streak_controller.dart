@@ -46,8 +46,6 @@ class StreakController extends AsyncNotifier<StreakState> {
   }
 
   /// XP for finishing a story; [correct] adds the comprehension bonus.
-  /// The amounts live in [kBaseStoryXp] / [kCorrectAnswerBonusXp] so the
-  /// check panel can show the reader the same numbers this awards.
   /// [alreadyAwarded] guards against re-awarding XP when a reader revisits
   /// a story they already completed today.
   Future<void> awardXp({required bool correct, required bool alreadyAwarded}) async {
@@ -55,9 +53,11 @@ class StreakController extends AsyncNotifier<StreakState> {
     final store = _store;
     if (store == null) return;
 
+    const baseXp = 10;
+    const correctBonus = 5;
     final current = state.value ?? store.readStreak();
     final updated = current.copyWith(
-      totalXp: current.totalXp + kBaseStoryXp + (correct ? kCorrectAnswerBonusXp : 0),
+      totalXp: current.totalXp + baseXp + (correct ? correctBonus : 0),
     );
     await store.writeStreak(updated);
     state = AsyncData(updated);
@@ -66,9 +66,3 @@ class StreakController extends AsyncNotifier<StreakState> {
 
 final streakControllerProvider =
     AsyncNotifierProvider<StreakController, StreakState>(StreakController.new);
-
-/// XP awarded for reading a story through to its check, right or wrong.
-const int kBaseStoryXp = 10;
-
-/// Extra XP for answering that check correctly.
-const int kCorrectAnswerBonusXp = 5;

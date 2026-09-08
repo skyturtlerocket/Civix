@@ -43,8 +43,6 @@ class _StoryCardStackState extends State<StoryCardStack> {
         for (var i = 0; i < stories.length; i++)
           StoryCard(
             story: stories[i],
-            storyNumber: i + 1,
-            storyCount: stories.length,
             onChecked: (correct) => widget.onStoryChecked(stories[i].id, correct),
             onAdvanceToNextStory: () {
               final isLastStory = i == stories.length - 1;
